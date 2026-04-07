@@ -29,3 +29,5 @@ sudo pacman -S --needed --noconfirm "${OFFICIAL[@]}"
 paru -S --needed --noconfirm --skipreview "${AUR[@]}"
 paru -S --needed --noconfirm --skipreview \
     --overwrite '*' ffmpeg-amd-full
+
+pacman -Qdtq | sudo pacman -Rns -
