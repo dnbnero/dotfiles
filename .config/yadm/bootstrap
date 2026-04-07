@@ -1,0 +1,28 @@
+#!/bin/bash
+
+OFFICIAL=(
+    intel-ucode
+    uv
+    yadm
+    audacity
+    d2
+    dbeaver
+    handbrake
+    lact
+    libreoffice-fresh-ru
+    obs-studio
+    qbittorrent
+    telegram-desktop
+    git-lfs
+)
+
+AUR=(
+    anytype-bin
+    happ-desktop-bin
+    visual-studio-code-bin
+)
+
+sudo pacman -S --needed --noconfirm "${OFFICIAL[@]}"
+paru -S --needed --noconfirm --skipreview "${AUR[@]}"
+paru -S --needed --noconfirm --skipreview \
+    --overwrite '*' ffmpeg-amd-full
