@@ -7,17 +7,20 @@ OFFICIAL=(
     audacity
     d2
     dbeaver
+    git-lfs
     handbrake
     lact
     libreoffice-fresh-ru
     obs-studio
     qbittorrent
+    rocminfo
     telegram-desktop
-    git-lfs
+    zed
 )
 
 AUR=(
     anytype-bin
+    deadbeef
     happ-desktop-bin
     visual-studio-code-bin
 )
